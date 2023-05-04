@@ -1,6 +1,9 @@
 # basit-icerik-takip-sistemi-php-sqlite
 PHP, SQLite ve Bootstrap ile hazırlanmış, bir içerik yönetim sisteminde bulunması gereken temel öğeleri bulunduran basit bir içerik takip aracıdır.
 
+## Ekran Görüntüsü
+![Basit İçerik Takip Sistemi 1](/yonetim/screenshots/basit-icerik-takip-sistemi-1.png "Basit İçerik Takip Sistemi 1")
+
 ## Dosyalar Ve Klasörler
 - parametre.php dosyasından genel ayarlamalar yapılabilir.
 - getir.php ile dosya çağırma işlemleri yapılabilir.
