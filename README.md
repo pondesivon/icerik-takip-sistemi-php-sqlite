@@ -15,6 +15,7 @@ PHP, SQLite ve Bootstrap ile hazırlanmış, bir içerik yönetim sisteminde bul
 - CSS
 - emmet.js
 - prism.js
+- jquery.js
 
 ## Sorumluluk Reddi
 Bu script örnek olması amacıyla hazırlanmıştır ve script kullanımı ile ilgili herhangi bir sorumluluk kabul edilmemektedir.
