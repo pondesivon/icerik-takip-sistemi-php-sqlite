@@ -21,7 +21,7 @@ class HtmlYapi {
        $kategori = trim($kategori);
 
        $kategori = "<a href='kategori.php?terim=$kategori' name='etiket' "
-                ."target='_blank' class='btn btn-light bg-secondary text-white kategori'>" . $kategori . "</a>";
+                ."_target='_blank' class='text-danger kategori'>" . $kategori . "</a>";
 
       return $kategori;
   }
@@ -35,11 +35,11 @@ class HtmlYapi {
        $oge = trim($oge);
 
        $oge = "<a href='etiket.php?terim=$oge' name='etiket' "
-                ."class='btn btn-light bg-gri'>" . $oge . "</a>";
+                ."class='konu-etiket'>" . $oge . "</a>";
        array_push($baglantiDizi, $oge);
     }
 
-    return implode(" ", $baglantiDizi);
+    return implode(", ", $baglantiDizi);
   }
 
   public static function EtiketOlusturDuz($etiketMetin) {

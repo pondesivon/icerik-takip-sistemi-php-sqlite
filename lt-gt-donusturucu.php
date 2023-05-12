@@ -6,11 +6,11 @@
    require_once('header.php');
 ?>
 
-<div class="container">
+<div class="container-fluid">
    <div class="row">
       <div class="col">
          <h1 class="page-title text-dark">lt gt Dönüştürücü</h1>
-         <p><textarea class="form-control text-monospace bg-gri textarea-fokus" id="lt-gt-donusturucu" name="lt-gt-donusturucu" placeholder="&lt; ve &gt; karakterlerini içeren bir metinde bu karakterleri &amp;lt; ve &amp;gt; şeklinde dönüştüren bir araçtır." rows="30" onmousemove="ltgtDonustur(false);"></textarea></p>
+         <p><textarea class="form-control text-monospace bg-gri textarea-fokus" id="lt-gt-donusturucu" name="lt-gt-donusturucu" placeholder="&lt; ve &gt; karakterlerini içeren bir metinde bu karakterleri &amp;lt; ve &amp;gt; şeklinde dönüştüren bir araçtır." rows="30" onmousemove="ltgtDonustur('lt-gt-donusturucu', false);"></textarea></p>
       </div>
    </div>
 </div>

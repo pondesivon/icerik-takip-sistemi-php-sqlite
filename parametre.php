@@ -26,9 +26,8 @@
 	//--------------------------------------------------
 	//Sidebar Listelenecek Etiketler Ve Kategoriler
 	//--------------------------------------------------
-	//Virgüllerle ayırın, arada boşluk olmasın.
-	$etiket_liste = "basit içerik takip sistemi";
-	$kategori_liste = "Genel";
+	$etiket_liste = "basit içerik takip sistemi,boş etiket";
+	$kategori_liste = "Genel,Meta";
 	$arac_liste="lt-gt-donusturucu.php,dosya-yukle.php";
 
 	//--------------------------------------------------
@@ -39,6 +38,6 @@
 	//--------------------------------------------------
 	//İçerik Ekleme Sayfası
 	//--------------------------------------------------
-	$varsayilan_kategori = "Genel";
+	$varsayilan_kategori = "Programlama";
 	$varsayilan_etiket = "";
 	$varsayilan_icerik_tur = "icerik"; //(icerik, sayfa)

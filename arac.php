@@ -1,5 +1,14 @@
  <?php
   class Arac {
+    public static function EtiketOlustur($liste, $baslangic, $bitis) {
+      $sonuc = "";
+      foreach ($liste as $oge) {
+        $sonuc = $sonuc . $baslangic . $oge . $bitis . "<br>";
+      }
+
+      return $sonuc;
+    }
+
     public static function KlasordekiDosyalariDiziyeAktar($klasor) {
       $dosyalar = array_diff(scandir($klasor), array('.', '..'));
 

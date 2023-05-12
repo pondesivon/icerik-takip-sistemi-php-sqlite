@@ -6,7 +6,7 @@
    require_once('header.php');
 ?>
 
-<div class="container">
+<div class="container-fluid">
    <div class="row">
       <div class="col">
          <!-- Form Alanı Başlangıç -->
@@ -16,10 +16,6 @@
                <?php echo $title; ?>
                <!-- <button type="submit" class="btn btn-dark float-right">Kaydet</button> -->
             </h1>
-
-            <!-- Hızlı Menü -->
-            <?php require_once("kalip/element-listesi-standart.php"); ?><br>
-            <?php require_once("kalip/element-listesi-ozel.php"); ?><hr>
 
             <div class="row">
                <div class="col-lg-9">
@@ -51,7 +47,7 @@
                     <div class="tab-pane fade" id="icerik-sade-tab-alan" role="tabpanel" aria-labelledby="icerik-sade-tab-icerik">
                      <!-- İçerik Sade -->
                      <div class="form-group">
-                        <textarea class="form-control text-monospace bg-gri textarea-fokus" name="icerik-sade" placeholder="İçerik (Sade)" id="icerik-sade" rows="30" onmousemove="ltgtDonustur(true);"></textarea>
+                        <textarea class="form-control text-monospace bg-gri textarea-fokus" name="icerik-sade" placeholder="İçerik (Sade)" id="icerik-sade" rows="30" onmousemove="ltgtDonustur('icerik-sade', true);"></textarea>
                      </div>                 
                     </div>
                   </div>                  
@@ -65,13 +61,27 @@
 
                   <!-- Kategori -->
                   <input type="text" class="form-control bg-gri mb-1" name="kategori" placeholder="Kategori" value="<?php echo $varsayilan_kategori; ?>">       
+
                   <!-- Etiket -->
-                  <textarea id="hizli-konu-etiket" type="text" class="form-control bg-gri textarea-fokus mb-1" name="etiket" placeholder="Etiketler" rows="8"><?php echo $varsayilan_etiket; ?></textarea>
-                  
+                  <textarea id="hizli-konu-etiket" type="text" class="form-control bg-gri textarea-fokus mb-1" name="etiket" placeholder="Etiketler" rows="6"><?php echo $varsayilan_etiket; ?></textarea>
+
+                  <!-- Etiket Öneri -->
+                 <button class="btn btn-secondary btn-block mb-1" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                   Etiket Kopyala
+                 </button>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body mb-1 bg-gri">
+                      <?php require_once('kalip/hizli-konu-etiket.php'); ?>
+                    </div>
+                  </div>
+
                   <!-- İçerik Tür -->
-                  <input id="_icerik-tur" type="text" class="form-control bg-gri mb-1" name="icerik-tur" placeholder="İçerik Türü" value="<?php echo $varsayilan_icerik_tur; ?>">
+                  <input id="_icerik-tur" type="text" class="form-control bg-gri mb-1 textarea-fokus" name="icerik-tur" placeholder="İçerik Türü" value="<?php echo $varsayilan_icerik_tur; ?>">
                   
-                  <?php require_once('kalip/hizli-konu-etiket.php'); ?>
+                  <!-- Hızlı Menü -->
+                  <?php require_once("kalip/element-listesi-standart.php"); ?><br>
+                  <?php require_once("kalip/element-listesi-ozel.php"); ?><hr>
+
                   <?php require_once('kalip/arac-listele-sidebar.php'); ?>
                </div>
             </div>          
@@ -79,6 +89,8 @@
          <!-- Form Alanı Bitiş -->
       </div>
    </div>
+
+  
 </div>
 
 <!-- Emmet Script Başlangıç -->

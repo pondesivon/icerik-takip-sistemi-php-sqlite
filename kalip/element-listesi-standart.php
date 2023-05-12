@@ -28,12 +28,14 @@
 		'gt' => '&amp;gt;',
 		'quot' => '&amp;quot;',
 		'amp' => '&amp;amp;',
+		'//--' => '//--------------------------------------------------',
+		'\'--' => '\'--------------------------------------------------',
 		'ol&gt;li*5' => '&lt;ol&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n&lt;/ol&gt;',
 		'ul&gt;li*5' => '&lt;ul&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n\t&lt;li&gt;&lt;/li&gt;\n&lt;/ul&gt;'
 	);
 
 	foreach ($dizi as $key => $value) {
 		echo '<span class="badge badge-secondary cursor-pointer" 
-		onclick="metinEkle(\'icerik-html\', \'' . $value . '\')">' . $key . '</span> ';
+		onclick="metinKopyala(&quot;' . $value . '&quot;)">' . $key . '</span> ';
 	}
 ?>

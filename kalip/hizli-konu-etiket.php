@@ -1,4 +1,3 @@
-<div class="alert alert-secondary">
 	<!-- Genel Etiketler -->
 	<?php 
 		$etiket_liste = "microsoft excel,microsof excel vba,chsarp,php,javascript,jquery,bootstrap,html,css,xml,bat,mysql,sqlite,açıklamalı içerik,düzenli ifadeler";
@@ -8,7 +7,7 @@
 		$yeniDizi = array();
 
 		foreach  ($dizi as $d) {
-			$oge = '<span class="badge badge-secondary cursor-pointer text-wrap" onclick="metinEkle(\'hizli-konu-etiket\',\'' . $d . ', \')">' . $d . '</span>';
+			$oge = '<span class="badge badge-secondary cursor-pointer text-wrap" onclick="metinKopyala(\'' . $d . '\')">' . $d . '</span>';
 			array_push($yeniDizi, $oge);
 		}
 
@@ -30,4 +29,3 @@
 
 		// echo implode(" ", $yeniDizi);
 	?>
-</div>

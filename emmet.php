@@ -6,7 +6,7 @@
    require_once('header.php');
 ?>
 
-<div class="container">
+<div class="container-fluid">
    <div class="row">
       <div class="col">
          <h1 class="page-title text-dark"><?php echo  $title; ?></h1>

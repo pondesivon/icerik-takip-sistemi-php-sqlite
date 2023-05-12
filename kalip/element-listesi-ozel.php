@@ -18,7 +18,7 @@
 
 	foreach ($dizi as $key => $value) {
 		echo '<span class="badge badge-secondary cursor-pointer" 
-		onclick="metinEkle(\'icerik-html\', \'' . $value . '\')">' . $key . '</span> ';
+		onclick="metinKopyala(\'' . $value . '\')">' . $key . '</span> ';
 	}
 ?>
 
@@ -40,7 +40,7 @@
 
 	foreach ($dizi as $key => $value) {
 		echo '<span class="badge badge-secondary cursor-pointer" 
-		onclick="metinEkle(\'icerik-html\', \'' . $value . '\')">' . $key . '</span> ';
+		onclick="metinKopyala(\'' . $value . '\')">' . $key . '</span> ';
 	}
 ?>
 
