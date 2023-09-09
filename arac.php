@@ -33,7 +33,7 @@
     }
 
     //BaglantiMetniOlustur
-    function BaglantiMetniOlustur($string) {
+    public static function BaglantiMetniOlustur($string) {
         $find = array('Ç', 'Ş', 'Ğ', 'Ü', 'İ', 'Ö', 'ç', 'ş', 'ğ', 'ü', 'ö', 'ı', '+', '#');
         $replace = array('c', 's', 'g', 'u', 'i', 'o', 'c', 's', 'g', 'u', 'o', 'i', 'plus', 'sharp');
         $string = strtolower(str_replace($find, $replace, $string));
@@ -71,7 +71,7 @@
       //https://gist.github.com/halillusion/8d9f1c66f06e790549435b3a2c2051f3
     }
 
-    function TurkceTarih($date){
+    public static function TurkceTarih($date){
         $aylar = array(
             'January' => 'Ocak',
             'February' => 'Şubat',
