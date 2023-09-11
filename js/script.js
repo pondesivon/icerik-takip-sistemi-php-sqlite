@@ -25,6 +25,28 @@ function baglantiMetniOlustur(metin) {
 	return metin;
 }
 
+function yararlanilanKaynaklarBaglantiOlustur(metin) {
+
+	var dizi = metin.split('\n');
+	var sonuc = '<div class="alert alert-dark"><strong>Yararlanılan Kaynaklar</strong></div>';
+	sonuc = sonuc + '\n' + '<div class="yararlanilan-kaynaklar list-group mb-3">';
+
+	for (var i = 0; i < dizi.length; i++) {
+		sonuc = sonuc + '\n\t' 
+			+ '<a href="'+ dizi[i] 
+			+'" rel="nofollow noopener" target="_blank" class="list-group-item bg-light text-secondary cursor-pointer">' 
+			+ dizi[i] +'</a>';
+	}
+
+	sonuc = sonuc + "\n" + "</div>";
+
+	return sonuc;
+}
+
+function metinKopyala(metin) {
+	navigator.clipboard.writeText(metin);
+}
+
 function karakterTrim (str, chr) {
 	if (chr === "]") chr = "\\]";
 	if (chr === "^") chr = "\\^";

@@ -2,12 +2,12 @@
 	//--------------------------------------------------
 	//Genel
 	//--------------------------------------------------
-	$siteAdi = "Basit İçerik Takip Sistemi";
+	$siteAdi = "İçerik Takip Sistemi";
 	
 	//--------------------------------------------------
 	//Sayfa
 	//--------------------------------------------------
-	$title = "Basit İçerik Takip Sistemi";
+	$title = "İçerik Takip Sistemi";
 	$kisaltma = "";
 	$yazar = "yönetici";
 
@@ -26,8 +26,8 @@
 	//--------------------------------------------------
 	//Sidebar Listelenecek Etiketler Ve Kategoriler
 	//--------------------------------------------------
-	$etiket_liste = "basit içerik takip sistemi,boş etiket";
-	$kategori_liste = "Genel,Meta";
+	$etiket_liste = "microsoft excel,microsoft excel vba,csharp,php,javascript,jquery,bootstrap,html,css,xml,bat,mysql,sqlite,açıklamalı içerik,düzenli ifadeler";
+	$kategori_liste = "Programlama,Genel,Meta,Sözlük";
 	$arac_liste="lt-gt-donusturucu.php,dosya-yukle.php";
 
 	//--------------------------------------------------

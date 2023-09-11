@@ -40,7 +40,7 @@
    //--------------------------------------------------
    if(!$sonuc) {
       $dbMesaj = $db->lastErrorMsg() . "\n" . $db->lastErrorCode();
-      Arac::GunlukDosyasiOlustur("icerik-guncelle.php", $dbMesaj);
+      //Arac::GunlukDosyasiOlustur("icerik-guncelle.php", $dbMesaj);
 
       echo $db->lastErrorMsg();
    } else {
@@ -49,7 +49,7 @@
       $mesaj = "İçerik başarılı bir şekilde güncellendi." . " [" . $db->changes() . "]";
       $metin = "<p style='$stil'>$mesaj</p>";
 
-      Arac::GunlukDosyasiOlustur("Guncelleme", $mesaj);
+      //Arac::GunlukDosyasiOlustur("Guncelleme", $mesaj);
       echo $metin;
    }
 

@@ -1,6 +1,6 @@
 	<!-- Genel Etiketler -->
 	<?php 
-		$etiket_liste = "microsoft excel,microsof excel vba,chsarp,php,javascript,jquery,bootstrap,html,css,xml,bat,mysql,sqlite,açıklamalı içerik,düzenli ifadeler";
+		$etiket_liste = "microsoft excel,microsoft excel vba,chsarp,php,javascript,jquery,bootstrap,html,css,xml,bat,mysql,sqlite,açıklamalı içerik,düzenli ifadeler";
 
 		$dizi = explode(",", $etiket_liste);
 

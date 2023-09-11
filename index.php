@@ -2,7 +2,7 @@
 <?php require_once('getir.php'); ?>
 
 <?php 
-    $title = "Basit İçerik Takip Sistemi" . $kisaltma;
+    $title = $siteAdi . $kisaltma;
     require_once('header.php');
 ?>
 

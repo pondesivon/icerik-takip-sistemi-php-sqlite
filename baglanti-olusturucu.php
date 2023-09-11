@@ -20,7 +20,7 @@
       <p>      
          <textarea class="form-control text-monospace bg-gri textarea-fokus" id="sonuc" name="sonuc" placeholder="Sonuç alanı." rows="10" onmouseenter="this.select();"></textarea>
       </p>
-      <p><input type="button" id="sonuc" value="Yararlanılan Kaynaklar" onclick="yararlanilanKaynaklarBaglantiOlustur();"></p>
+      <p><input type="button" id="sonuc" value="Yararlanılan Kaynaklar" onclick="document.getElementById('sonuc').value = yararlanilanKaynaklarBaglantiOlustur(document.getElementById('baglanti-liste').value);"></p>
       </div>
    </div>
 </div>

@@ -32,12 +32,12 @@
    //--------------------------------------------------
    if(!$sonuc) {
       $dbMesaj = $db->lastErrorMsg() . "\n" . $db->lastErrorCode();
-      Arac::GunlukDosyasiOlustur("icerik-kaydet.php", $dbMesaj);
+      //Arac::GunlukDosyasiOlustur("icerik-kaydet.php", $dbMesaj);
    
       echo $db->lastErrorMsg();
    } else {
       $dbMesaj = $db->lastErrorMsg() . "\n" . $db->lastErrorCode();
-      Arac::GunlukDosyasiOlustur("icerik-kaydet.php", $dbMesaj);
+      //Arac::GunlukDosyasiOlustur("icerik-kaydet.php", $dbMesaj);
 
       $stil = "border:3px solid #aaff70; padding:20px; border-radius:5px; 
          background-color:#d6ffa5;font-size: 25px;color: #4b643a;";
