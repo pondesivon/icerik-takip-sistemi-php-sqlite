@@ -26,7 +26,7 @@ $sonucMetin = $statikDosyaKalip1
 	. '<div class="alert alert-info"><strong>Etiketler: </strong>' . $kayit['etiket'] . '</div>'
 	. $statikDosyaKalip3;
 
-	echo '&lt;li class="str"&gt;&lt;a class="bgl" href="statik/' . $kayit['baglanti'] . ".html" . '"&gt;' . $kayit['baslik'] . '&lt;/a&gt;&lt;/li&gt;';
+	echo '&lt;li class="str"&gt;&lt;a class="bgl" href="icerik/' . $kayit['baglanti'] . ".html" . '"&gt;' . $kayit['baslik'] . '&lt;/a&gt;&lt;/li&gt;';
 
 	$doc = fopen($yeniDosya, "w");
 	file_put_contents($yeniDosya, $sonucMetin);
